@@ -1,0 +1,59 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="{% static 'Interface/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'Interface/css/style2.css' %}">
+        <link rel="stylesheet" href="{% static 'Interface/css/style.css' %}">
+        <title>Speech Emotion Recognition</title>
+    </head>
+    <body style="background-image: url('{% static 'Interface/images/backgrounf_img.jpeg' %}'); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;">
+    
+        <!--Navigation  bar-->
+        <nav class="navbar navbar-expand-lg" style="background-color: #5040b5a2">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/">
+                    <img id="perm_audio" src="{% static 'Interface/images/mike_logo.png' %}" width="40px" height="40px" />
+                    <span style="color: white; vertical-align: middle; font-weight: 400">Speech Emotion Recognition</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/" style="color: white; font-weight: 500">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about_us/" style="color: white; font-weight: 500">About Us</a>
+                        </li>                    
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        {% block content %}{% endblock content %}
+
+        <script src="{% static 'Interface/js/app.js' %}"></script>
+        <link rel="stylesheet" href="{% static 'Interface/js/bootstrap.bundle.min.js' %}" />
+
+        <script src="https://cdn.rawgit.com/mattdiamond/Recorderjs/08e7abd9/dist/recorder.js"></script>
+        <!-- Latest version of jQuery 3.x -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script>
+            // Get the button element
+            var grantPermissionBtn = document.getElementById("grantPermissionBtn");
+
+            // Add click event listener to the button
+            grantPermissionBtn.addEventListener("click", function () {
+                document.getElementById("microphoneRow").classList.remove("d-none");
+                document.getElementById("micbtn").classList.add("d-none");
+            });
+        </script>
+    </body>
+</html>

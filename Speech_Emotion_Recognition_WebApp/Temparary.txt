@@ -1,0 +1,3 @@
+    # path="D:\Study\Project_II\Speech_Emotion_Recognition_Using_CNN\RAVDESS\Actor_03\\03-01-04-02-02-02-03.wav"
+    # path="D:\Study\Project_II\Speech_Emotion_Recognition_Using_CNN\RAVDESS\Actor_06\\03-01-02-02-02-01-06.wav"
+    # path="D:\Study\Project_II\Speech_Emotion_Recognition_Using_CNN\RAVDESS\Actor_06\\03-01-03-01-01-01-06.wav"

@@ -1,0 +1,75 @@
+a {
+  color: #337ab7;
+}
+
+p {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+a:hover {
+  color: #23527c;
+}
+
+a:visited {
+  color: #8d75a3;
+}
+
+h1 {
+
+  font-size: 220%;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  font-weight: bold;
+  color: #005A9C;
+  font-size: 140%;
+  text-transform: uppercase;
+}
+
+red {
+  color: red;
+}
+
+#controls {
+  display: flex;
+  margin-top: 2rem;
+  max-width: 28em;
+  margin: 0 auto;
+}
+
+audio {
+  display: block;
+  width: 100%;
+  margin-top: 0.2rem;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+#formats {
+  margin-top: 0.5rem;
+  font-size: 80%;
+  text-align: center;
+}
+
+#recordingsList {
+  max-width: 28em;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+  list-style-position: inside;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#audio {
+  text-align: center;
+}
